@@ -14,8 +14,17 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tr_group', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id('groupID');
+            $table->unsignedBigInteger('travelID');
+            $table->string('tipo_grupo');
+            $table->string('nombre_grupo');
+            $table->string('tipo_encargado');
+            $table->string('nombre_encargado');
+            $table->string('telefono_encargado');
+            $table->string('grado');
+            $table->string('seccion');
+            
+            $table->foreign('travelID')->references('travelID')->on('tr_travels');
         });
     }
 
