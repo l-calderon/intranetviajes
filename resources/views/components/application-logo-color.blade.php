@@ -1,0 +1,1 @@
+<img src="/images/icono-rv-color.png" alt="" class="w-full max-w-40">

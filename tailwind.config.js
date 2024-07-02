@@ -16,7 +16,9 @@ module.exports = {
             colors: {
                 'bdark-rv': '#1C2434',
                 'white-rv': '#f8fafc',
-                'red-rv' :  '#CC2A41'
+                'red-rv' :  '#CC2A41',
+                'wsp-rv' :  '#25d366',
+                'marfil-rv' : '#F5F5F5'
             },
             fontWeight: {
                 extraLight: 100,
@@ -28,6 +30,9 @@ module.exports = {
                 extraBold: 800,
                 black: 900,
             },
+            maxWidth: {
+                'custom-rv': '76rem', // Agrega un nuevo valor de max-width
+              },
         },
         
     },
