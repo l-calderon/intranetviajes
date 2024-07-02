@@ -51,7 +51,7 @@
                         <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md border-2 border-red-rv">
                           <div class="relative bg-clip-border mt-4 mx-4 rounded-xl overflow-hidden bg-transparent text-gray-700 shadow-none !m-0 p-6">
                             
-                            <h3 class="antialiased tracking-normal font-sans text-3xl font-semibold leading-snug text-blue-gray-900 flex gap-1 mt-4">$29.99<span class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-blue-gray-900 -translate-y-0.5 self-end opacity-70"></span></h3>
+                            <h3 class="antialiased tracking-normal font-sans text-3xl font-semibold leading-snug text-blue-gray-900 flex gap-1 mt-4">Ficha de Salud<span class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-blue-gray-900 -translate-y-0.5 self-end opacity-70"></span></h3>
                           </div>
                           <div class="p-6 border-t border-blue-gray-50 self-center">
                             <img src="/images/nurse.png" alt="" class="pb-0 w-40">
@@ -62,7 +62,7 @@
                         <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md border-2 border-red-rv">
                           <div class="relative bg-clip-border mt-4 mx-4 rounded-xl overflow-hidden bg-transparent text-gray-700 shadow-none !m-0 p-6">
                             
-                            <h3 class="antialiased tracking-normal font-sans text-3xl font-semibold leading-snug text-blue-gray-900 flex gap-1 mt-4">Contact us for a quote<span class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-blue-gray-900 -translate-y-0.5 self-end opacity-70"></span></h3>
+                            <h3 class="antialiased tracking-normal font-sans text-3xl font-semibold leading-snug text-blue-gray-900 flex gap-1 mt-4">Ficha Nutricional<span class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-blue-gray-900 -translate-y-0.5 self-end opacity-70"></span></h3>
                           </div>
                           <div class="p-6 border-t border-blue-gray-50 self-center">
                             <img src="/images/health.png" alt="" class="pb-0 w-40">
