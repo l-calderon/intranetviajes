@@ -16,7 +16,7 @@ class TermsController extends Controller
     {
         $user = auth()->user();
         $user->accepted_terms = true;
-        $user->save(); 
+        $user->save(); // Aquí debería funcionar el método save()
 
         return redirect()->intended('dashboard');
     }
