@@ -10,9 +10,12 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        
+        
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
@@ -33,6 +36,8 @@
             </main>
         </div>
     </body>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
     <footer class="bg-bdark-rv text-white py-2 mt-auto">
         <div class="container mx-auto px-4">
           <div class="text-center text-gray-400 mt-4">
