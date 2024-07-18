@@ -68,4 +68,8 @@ Route::get('/mi-checkin', function () {
     return view('mi-checkin');
 })->middleware(['auth', 'verified'])->name('mi-checkin');
 
+Route::get('/mi-cronograma', function () {
+    return view('mi-cronograma');
+})->middleware(['auth', 'verified'])->name('mi-cronograma');
+
 require __DIR__ . '/auth.php';
