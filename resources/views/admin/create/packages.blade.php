@@ -1,57 +1,77 @@
 <x-appadminroxana-layout>
-    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
-        <div class="-mx-3 md:flex mb-6">
-          <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
-              First Name
-            </label>
-            <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3" id="grid-first-name" type="text" placeholder="Jane">
-            <p class="text-red text-xs italic">Please fill out this field.</p>
-          </div>
-          <div class="md:w-1/2 px-3">
-            <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-last-name">
-              Last Name
-            </label>
-            <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-last-name" type="text" placeholder="Doe">
-          </div>
-        </div>
-        <div class="-mx-3 md:flex mb-6">
-          <div class="md:w-full px-3">
-            <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-password">
-              Password
-            </label>
-            <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3" id="grid-password" type="password" placeholder="******************">
-            <p class="text-grey-dark text-xs italic">Make it as long and as crazy as you'd like</p>
-          </div>
-        </div>
-        <div class="-mx-3 md:flex mb-2">
-          <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-city">
-              City
-            </label>
-            <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-city" type="text" placeholder="Albuquerque">
-          </div>
-          <div class="md:w-1/2 px-3">
-            <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-state">
-              State
-            </label>
-            <div class="relative">
-              <select class="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded" id="grid-state">
-                <option>New Mexico</option>
-                <option>Missouri</option>
-                <option>Texas</option>
-              </select>
-              <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
-                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+  <h2 class="m-12 text-bdark-rv text-2xl font-bold "> Crear Paquetes</h2>
+    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 m-12 mb-4 flex flex-col my-2">
+        <form>
+          <div class="grid grid-cols-3 gap-4">
+              <div>
+                  <label for="codigo" class="block text-sm font-medium text-gray-700">Código de Paquete</label>
+                  <input type="text" id="codigo" name="codigo" class="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
               </div>
-            </div>
+              <div>
+                  <label for="programa" class="block text-sm font-medium text-gray-700">Programa</label>
+                  <input type="text" id="programa" name="programa" class="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              </div>
+              <div>
+                  <label for="dias" class="block text-sm font-medium text-gray-700">Días</label>
+                  <input type="text" id="dias" name="dias" class="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              </div>
+              <div>
+                  <label for="hotel" class="block text-sm font-medium text-gray-700">Hotel</label>
+                  <input type="text" id="hotel" name="hotel" class="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              </div>
+              <div>
+                  <label for="doble" class="block text-sm font-medium text-gray-700">Doble y Triple</label>
+                  <input type="text" id="doble" name="doble" class="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              </div>
+              <div>
+                  <label for="tour" class="block text-sm font-medium text-gray-700">Tour</label>
+                  <input type="text" id="tour" name="tour" class="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              </div>
+              <div>
+                  <label for="alojamiento" class="block text-sm font-medium text-gray-700">Alojamiento</label>
+                  <input type="text" id="alojamiento" name="alojamiento" class="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              </div>
+              <div>
+                  <label for="traslado" class="block text-sm font-medium text-gray-700">Traslado</label>
+                  <select id="traslado" name="traslado" class="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                      <option>Seleccionar opción</option>
+                      <!-- Opciones -->
+                  </select>
+              </div>
+              <div>
+                  <label for="pconscientizacion" class="block text-sm font-medium text-gray-700">P.Concientización</label>
+                  <select id="pconscientizacion" name="pconscientizacion" class="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                      <option>Seleccionar opción</option>
+                      <!-- Opciones -->
+                  </select>
+              </div>
+              <div>
+                  <label for="almuerzo" class="block text-sm font-medium text-gray-700">Almuerzo</label>
+                  <select id="almuerzo" name="almuerzo" class="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                      <option>Seleccionar opción</option>
+                      <!-- Opciones -->
+                  </select>
+              </div>
+              <div>
+                  <label for="doctor" class="block text-sm font-medium text-gray-700">Doctor</label>
+                  <select id="doctor" name="doctor" class="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                      <option>Seleccionar opción</option>
+                      <!-- Opciones -->
+                  </select>
+              </div>
+              <div>
+                  <label for="kiddelviajero" class="block text-sm font-medium text-gray-700">Kid del Viajero</label>
+                  <select id="kiddelviajero" name="kiddelviajero" class="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                      <option>Seleccionar opción</option>
+                      <!-- Opciones -->
+                  </select>
+              </div>
           </div>
-          <div class="md:w-1/2 px-3">
-            <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-zip">
-              Zip
-            </label>
-            <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-zip" type="text" placeholder="90210">
+          <div class="mt-6 flex justify-center">
+              <button type="submit" class="px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
+                  REGISTRAR PAQUETE
+              </button>
           </div>
-        </div>
-      </div>
+      </form>
+    </div>
 </x-appadminroxana-layout>

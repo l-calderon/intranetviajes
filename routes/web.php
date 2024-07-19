@@ -1,6 +1,10 @@
 <?php
 
 use App\Http\Controllers\CreatePackagesController;
+use App\Http\Controllers\CreateTravelsController;
+use App\Http\Controllers\CreatePassengerController;
+use App\Http\Controllers\CreateGroupsController;
+use App\Http\Controllers\CreatePaymentsController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -27,7 +31,10 @@ Route::get('/', function () {
 });
 Route::get('/dashboardAdmin', [DashboardAdminController::class, 'index'])->name('dashboardAdmin');
 Route::get('/packages', [CreatePackagesController::class, 'index']);
-
+Route::get('/travels', [CreateTravelsController::class, 'index']);
+Route::get('/groups', [CreateGroupsController::class, 'index']);
+Route::get('/passengers', [CreatePassengerController::class, 'index']);
+Route::get('/payments', [CreatePaymentsController::class, 'index']);
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
