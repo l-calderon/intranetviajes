@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\CreatePackagesController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\DashboardAdminController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +25,8 @@ Route::get('/', function () {
         return view('auth.login');  // Asegúrate de que esta vista existe
     }
 });
+Route::get('/dashboardAdmin', [DashboardAdminController::class, 'index'])->name('dashboardAdmin');
+Route::get('/packages', [CreatePackagesController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
