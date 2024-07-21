@@ -45,5 +45,44 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/mis-datos', function () {
+    return view('users.mis-datos');
+})->middleware(['auth', 'verified'])->name('mis-datos');
+
+Route::get('/ficha-medica', function () {
+    return view('users.ficha-medica');
+})->middleware(['auth', 'verified'])->name('ficha-medica');
+
+Route::get('/ficha-nutricional', function () {
+    return view('users.ficha-nutricional');
+})->middleware(['auth', 'verified'])->name('ficha-nutricional');
+
+Route::get('/tu-viaje', function () {
+    return view('users.tu-viaje');
+})->middleware(['auth', 'verified'])->name('tu-viaje');
+
+Route::get('/mi-itinerario', function () {
+    return view('users.mi-itinerario');
+})->middleware(['auth', 'verified'])->name('mi-itinerario');
+
+Route::get('/mi-fotoyvideo', function () {
+    return view('users.mi-fotoyvideo');
+})->middleware(['auth', 'verified'])->name('mi-fotoyvideo');
+
+Route::get('/mi-documento', function () {
+    return view('users.mi-documento');
+})->middleware(['auth', 'verified'])->name('mi-documento');
+
+Route::get('/mi-checkin', function () {
+    return view('users.mi-checkin');
+})->middleware(['auth', 'verified'])->name('mi-checkin');
+
+Route::get('/mi-cronograma', function () {
+    return view('users.mi-cronograma');
+})->middleware(['auth', 'verified'])->name('mi-cronograma');
+Route::get('/principal', function () {
+    return view('users.principal');
+})->middleware(['auth', 'verified'])->name('principal');
+
 require __DIR__.'/auth.php';
 
