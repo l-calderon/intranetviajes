@@ -32,7 +32,7 @@
                         <h1 class="text-red-rv text-2xl font-bold">ITINERARIO</h1>
                     </div>
                     <div>
-                        <img src="/images/Desc-Ficha01.png" alt="#" width="200px">
+                        <img src="/images/ficha.png" alt="#" width="200px">
                     </div>
                     <div>
                         <a href="{{ route('mi-itinerario') }}">
